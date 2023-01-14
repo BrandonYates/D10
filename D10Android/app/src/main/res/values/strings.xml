@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">D10</string>
+    <string name="landing_screen_banner">Welcome to D10</string>
+    <string name="item_screen_banner">Items</string>
+</resources>
