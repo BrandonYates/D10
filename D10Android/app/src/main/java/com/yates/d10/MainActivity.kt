@@ -14,6 +14,7 @@ import com.yates.d10.model.Item
 import com.yates.d10.model.ItemCategory
 import com.yates.d10.model.ItemWeight
 import com.yates.d10.ui.composables.ItemScreen
+import com.yates.d10.ui.composables.LandingScreen
 import com.yates.d10.ui.theme.D10Theme
 
 class MainActivity : ComponentActivity() {
@@ -26,19 +27,7 @@ class MainActivity : ComponentActivity() {
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colorScheme.background
                 ) {
-                    Greeting("Android")
-                    val item = Item(
-                        id = "vmwogcv88zhozqz",
-                        name = "Chain Mail",
-                        dice_roll = "+3",
-                        action_effect = "Adds +3 to defense rolls",
-                        category = ItemCategory.ARMOR,
-                        weight = ItemWeight.MEDIUM,
-                        description = "Relatively inexpensive armor made out of interlocking " +
-                                "metal rings",
-                        range = "N/A"
-                    )
-                    ItemScreen(items = listOf(item))
+                   LandingScreen()
                 }
             }
         }
